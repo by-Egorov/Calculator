@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.calc {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: Arial, serif;
+  padding: 10px;
+  box-shadow: 4px 4px 4px #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.calc__screen {
+  height: 300px;
+  padding: 10px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 13px;
+  font-size: 6rem;
+}
+.calc__screen p {
+  text-align: right;
+  margin: 0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas: "ac plus-minus percent division" "seven eigth nine multi" "four five six minus" "one two three plus" "zero zero dot equal";
+  grid-gap: 8px;
+}
+.buttons .btn {
+  width: 90px;
+  height: 90px;
+  background: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.buttons .btn:hover {
+  filter: brightness(120%);
+}
+.buttons .btn:active {
+  filter: brightness(90%);
+}
+.buttons .btn.bg-gray {
+  background: #a6a6a6;
+}
+.buttons .btn.bg-orange {
+  background: #ff9501;
+}
+.buttons .btn.zero {
+  width: 100%;
+  border-radius: 45px;
+}
+.buttons .btn.ac {
+  line-height: 85px;
+}
+.buttons .btn.multi {
+  line-height: 100px;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+/*# sourceMappingURL=style.css.map */
