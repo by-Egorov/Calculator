@@ -99,17 +99,24 @@ h6 {
 /*--------------------*/
 body {
   background: #000;
+  height: 100vh;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
 
 .calc {
   width: 100%;
-  height: 463px;
-  color: #fff;
+  height: 100%;
+  color: #e5dfdf;
   font-family: Arial, serif;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .calc__screen {
   height: 300px;
@@ -127,7 +134,8 @@ body {
 .buttons {
   display: grid;
   grid-template-areas: "ac plus-minus percent division" "seven eigth nine multi" "four five six minus" "one two three plus" "zero zero dot equal";
-  grid-gap: 8px;
+  grid-gap: 10px;
+  justify-items: end;
 }
 .buttons .btn {
   width: 80px;
@@ -139,6 +147,7 @@ body {
   font-size: 2.5rem;
   cursor: pointer;
   user-select: none;
+  color: #ccc9c9;
 }
 .buttons .btn:hover {
   filter: brightness(120%);
@@ -147,10 +156,12 @@ body {
   filter: brightness(90%);
 }
 .buttons .btn.bg-gray {
-  background: #a6a6a6;
+  background: #7d7b7b;
+  color: #000;
 }
 .buttons .btn.bg-orange {
   background: #ff9501;
+  color: #e5dfdf;
 }
 .buttons .btn.zero {
   width: 100%;

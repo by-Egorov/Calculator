@@ -1,6 +1,8 @@
 const ac = document.querySelector('.ac')
 const btn = document.querySelector('.buttons')
 const out = document.querySelector('.calc__screen')
+const myTime = document.querySelector('.time')
+const myDate = document.querySelector('.date')
 
 let a = ''
 let b = ''
@@ -61,7 +63,6 @@ function Calculations(event) {
 					a = (+a) + percent 
 					b = ''
 					percent = ''
-					numPercent = ''
 					sign = ''
 					out.textContent = a
 					return
@@ -123,3 +124,23 @@ function clearAll() {
 	finish = false
 	out.textContent = '0'
 }
+
+let current_date = new Date().toLocaleString('ru', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+})
+
+let current_time = new Date().toLocaleString('ru', {
+	hour: 'numeric',
+	minute: 'numeric'
+})
+
+setInterval(function () {
+	myDate.textContent = current_date
+}, 1000);
+
+setInterval(function () {
+	myTime.textContent = current_time
+}, 1000);
+
