@@ -106,6 +106,8 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
+  color: #a7a5a4;
+  padding: 5px;
 }
 
 .calc {
@@ -119,7 +121,7 @@ body {
   justify-content: space-between;
 }
 .calc__screen {
-  height: 300px;
+  height: 200px;
   padding: 10px;
   display: grid;
   justify-items: end;
@@ -131,6 +133,20 @@ body {
   margin: 0;
 }
 
+.theme {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background: transparent;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+}
+
+.theme svg {
+  cursor: pointer;
+}
+
 .buttons {
   display: grid;
   grid-template-areas: "ac plus-minus percent division" "seven eigth nine multi" "four five six minus" "one two three plus" "zero zero dot equal";
@@ -138,13 +154,13 @@ body {
   justify-items: end;
 }
 .buttons .btn {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   background: #333;
   border-radius: 50%;
   text-align: center;
   line-height: 80px;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   cursor: pointer;
   user-select: none;
   color: #ccc9c9;

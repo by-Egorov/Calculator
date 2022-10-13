@@ -125,6 +125,8 @@ function clearAll() {
 	out.textContent = '0'
 }
 
+// Data & Time
+
 let current_date = new Date().toLocaleString('ru', {
 	year: 'numeric',
 	month: 'long',

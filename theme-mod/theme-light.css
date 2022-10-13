@@ -1,0 +1,37 @@
+/*--------------------*/
+body {
+	background: #c4c4c4;
+}
+
+.date-time {
+	color: #222;
+}
+
+.calc {
+	color: #222;
+}
+.calc__screen {
+}
+
+.buttons .btn {
+	background: #c4c4c4;
+	color: #000;
+}
+
+.buttons .btn.bg-gray {
+	background: #7d7b7b;
+	color: #000;
+}
+.buttons .btn.bg-orange {
+	background: #ff9501;
+	color: #e5dfdf;
+}
+.changeTheme[data-theme="dark"] {
+	display: block;
+}
+.changeTheme[data-theme="light"] {
+	display: none;
+}
+
+
+/*# sourceMappingURL=style.css.map */
