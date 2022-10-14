@@ -1,7 +1,7 @@
 @import './nullstyle';
 body {
 	background: #000;
-	height: 100vh;
+	max-height: 800px;
 }
 .date-time{
 	display: flex;
@@ -13,7 +13,7 @@ body {
 
 .calc {
 	width: 100%;
-	height: 100%;
+	height: 580px;
 	color: #e5dfdf;
 	font-family: Arial, serif;
 	padding: 10px;

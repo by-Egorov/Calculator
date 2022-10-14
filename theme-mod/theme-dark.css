@@ -1,6 +1,0 @@
-.changeTheme[data-theme="dark"] {
-	display: none;
-}
-.changeTheme[data-theme="light"] {
-	display: block;
-}
